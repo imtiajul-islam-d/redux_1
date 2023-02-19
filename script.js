@@ -2,6 +2,10 @@ const showCount = document.querySelector("#count");
 const inc = document.querySelector("#inc");
 const dec = document.querySelector("#dec");
 
+// action identifiers
+const INCREMENT = "INCREMENT"
+const DECREMENT = "DECREMENT"
+
 // create a initial state
 const initialState = {
   value: 0,
