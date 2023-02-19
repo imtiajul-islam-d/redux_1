@@ -6,6 +6,20 @@ const dec = document.querySelector("#dec");
 const INCREMENT = "INCREMENT"
 const DECREMENT = "DECREMENT"
 
+// action 
+const increment = (value) => {
+  return {
+    type: INCREMENT,
+    payload: value
+  }
+}
+const decrement = (value) => {
+  return {
+    type: DECREMENT,
+    payload: value
+  }
+}
+
 // create a initial state
 const initialState = {
   value: 0,
