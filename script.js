@@ -7,7 +7,7 @@ const initialState = {
   value: 0,
 };
 
-function counterReducer (state = initialState, action) {
+const counterReducer = (state = initialState, action) => {
   if(action.type === "increment") {
     return {
       ...state,
